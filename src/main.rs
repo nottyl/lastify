@@ -6,6 +6,8 @@ use rspotify::spotify::oauth2::SpotifyClientCredentials;
 use lastfm::{Lastfm, Track};
 
 fn main() {
+    dotenv::dotenv().ok();
+
     // Spotify setup
     let spotify_client_id = "your_spotify_client_id";
     let spotify_client_secret = "your_spotify_client_secret";
